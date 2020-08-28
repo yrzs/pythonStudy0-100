@@ -26,12 +26,12 @@ def main():
     smtper = SMTP('smtp.qq.com')
     # 开启安全连接
     smtper.starttls()
-    sender = '260652022@qq.com'
-    key = 'juukhlmxocyibjhi'
+    sender = 'xx.qq.com'
+    key = 'xxxxx'
     receivers = [
-        '1669616538@qq.com',
-        '1275934162@qq.com',
-        '564981265@qq.com'
+        'xx@qq.com',
+        'xx@qq.com',
+        'xx@qq.com'
     ]
     smtper.login(sender, key)
     smtper.sendmail(sender, receivers, message.as_string())
